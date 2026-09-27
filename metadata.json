@@ -2,6 +2,7 @@
   "uuid": "better-app-switcher@munawwar.github.io",
   "name": "Better App Switcher",
   "description": "Show window titles in Alt+Tab and Overview, and switch current-app windows with keyboard shortcuts.",
+  "url": "https://github.com/Munawwar/better-app-switcher",
   "version": 6,
   "shell-version": ["46"],
   "settings-schema": "org.gnome.shell.extensions.better-app-switcher"
