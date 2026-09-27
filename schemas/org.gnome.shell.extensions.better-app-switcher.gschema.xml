@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<schemalist>
+  <schema id="org.gnome.shell.extensions.better-app-switcher" path="/org/gnome/shell/extensions/better-app-switcher/">
+    <key name="toggle-current-app-overview" type="as">
+      <default>['&lt;Super&gt;w']</default>
+      <summary>Current app overview shortcut</summary>
+      <description>Keyboard shortcut to toggle the overview filtered to the focused application.</description>
+    </key>
+    <key name="switch-current-app-windows" type="as">
+      <default>['&lt;Alt&gt;grave']</default>
+      <summary>Current app window switcher shortcut</summary>
+      <description>Keyboard shortcut to switch windows of the focused application.</description>
+    </key>
+  </schema>
+</schemalist>
