@@ -16,6 +16,10 @@ const OVERVIEW_SHORTCUT = 'toggle-current-app-overview';
 const SWITCHER_SHORTCUT = 'switch-current-app-windows';
 const DEFAULT_SWITCHER_SHORTCUT = '<Alt>grave';
 
+// Adapted from WindowPreview.showOverlay()/hideOverlay() by Jonas Dreßler,
+// Florian Müllner, and Sebastian Keller. GNOME Shell license: GPL-2.0-or-later.
+// https://github.com/GNOME/gnome-shell/blob/46.0/js/ui/windowPreview.js
+// BEGIN adapted GNOME Shell code
 function updateOverviewOverlay(shown, animate) {
     if ((shown && !this._overlayEnabled) || this._overlayShown === shown)
         return;
@@ -48,6 +52,7 @@ function updateOverviewOverlay(shown, animate) {
     if (shown)
         this.emit('show-chrome');
 }
+// END adapted GNOME Shell code
 
 const FocusedAppWindowSwitcher = GObject.registerClass(
 class FocusedAppWindowSwitcher extends AltTab.WindowSwitcherPopup {
