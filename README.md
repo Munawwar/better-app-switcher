@@ -1,13 +1,13 @@
 # Better App Switcher
 
-A GNOME Shell 46 extension with window switching and title visibility features:
+Have you ever wished GNOME had shortcut to switch between windows of same app? This (GNOME Shell 46) extension adds:
 
-- **Super+W** opens the Activities overview filtered to the focused application.
-- **Alt+KEY_GRAVE** opens a window switcher filtered to the focused application. Keep Alt held and tap KEY_GRAVE again to move through its windows; release Alt to activate the selected window. **Super+KEY_GRAVE** remains GNOME's built-in same-app switcher.
+- **Super+W** to open Activities overview filtered to the focused application.
+- **Alt+&#96;** opens a window switcher filtered to the focused application. Keep Alt held and tap &#96; again to move through its windows; release Alt to activate the selected window. **Super+&#96;** remains GNOME's built-in same-app switcher.
 - **Alt+Tab** shows a title under every window in the regular window switcher.
 - The Activities overview always shows each window title below its thumbnail.
 
-Both extension shortcuts can be changed in **Extensions → Better App Switcher → Preferences**. Type shortcuts like `Super + W` or `Alt + KEY_GRAVE` and apply them. Alt+KEY_GRAVE uses GNOME's existing `switch-group` binding by default. After assigning another shortcut, GNOME's original Alt+KEY_GRAVE behavior remains available.
+Both extension shortcuts can be changed in **Extensions → Better App Switcher → Preferences**. Type shortcuts like `Super + W` or `Alt + KEY_GRAVE` and apply them. Alt+&#96; uses GNOME's existing `switch-group` binding by default. After assigning another shortcut, GNOME's original Alt+&#96; behavior remains available.
 
 **Recommended companion:** [Cleaner Overview](https://extensions.gnome.org/extension/3759/cleaner-overview/) makes overview window previews the same height and orders them by most recent use. It pairs well with Better App Switcher's overview titles and app-specific window switching.
 
