@@ -29,12 +29,18 @@ Licensed under GPL-2.0-or-later; see [LICENSE](LICENSE). The extension UUID uses
 
 ## Install
 
-From this directory, compile the schema and install the archive:
+For a local install, compile the schema and install an archive that includes the license:
 
 ```sh
 glib-compile-schemas schemas
-zip -r /tmp/better-app-switcher.zip metadata.json extension.js prefs.js schemas
+zip -r /tmp/better-app-switcher.zip metadata.json extension.js prefs.js schemas LICENSE
 gnome-extensions install --force /tmp/better-app-switcher.zip
+```
+
+For an upload to extensions.gnome.org, create the package with GNOME's packer and include the license:
+
+```sh
+gnome-extensions pack --force --extra-source=LICENSE --out-dir=/tmp .
 ```
 
 On Wayland, log out and back in after installing so GNOME Shell discovers the update. The extension can be enabled, disabled, or removed from the **Extensions** app.
